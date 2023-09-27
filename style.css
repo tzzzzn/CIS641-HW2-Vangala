@@ -1,0 +1,32 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    /* color: #333; */
+    background-color: rgb(61, 61, 61);
+}
+
+.container{
+   background-color: rgb(220, 220, 220);
+   max-width:70%;
+   max-height:100%;
+   /* margin:0px 100px; */ 
+   margin:1% auto;
+   border:black solid 1px;
+}
+
+header{
+    margin:1%;
+    background-color: rgb(206, 206, 206);
+    text-align: center;
+}
+
+#hr1{
+    border:black solid 1px;
+    margin:1%;
+}
+
+ul{
+    margin:10px 20px;
+}
