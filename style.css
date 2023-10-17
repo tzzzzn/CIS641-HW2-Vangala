@@ -1,32 +1,123 @@
-*{
-    padding:0px;
-    margin:0px;
-}
-body{
-    /* color: #333; */
-    background-color: rgb(61, 61, 61);
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
-.container{
-   background-color: rgb(220, 220, 220);
-   max-width:70%;
-   max-height:100%;
-   /* margin:0px 100px; */ 
-   margin:1% auto;
-   border:black solid 1px;
-}
-
-header{
-    margin:1%;
-    background-color: rgb(206, 206, 206);
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: #fff;
     text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
-#hr1{
-    border:black solid 1px;
-    margin:1%;
+header h1 {
+    font-size: 36px;
 }
 
-ul{
-    margin:10px 20px;
+header p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Navigation bar styles */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Card styles for sections */
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Navigation links */
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+/* Additional section-specific styles */
+#experience {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+#projects {
+    background-color: #f4f4f4;
+    padding: 30px 0;
+}
+
+#education {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+#skills {
+    background-color: #f4f4f4;
+    padding: 30px 0;
+}
+
+#achievements {
+    background-color: #f9f9f9;
+    padding: 30px 0;
 }
