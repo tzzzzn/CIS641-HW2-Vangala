@@ -1,4 +1,4 @@
-# THARUN VANGALA
+# [THARUN VANGALA](https://tzzzzn.github.io/CIS641-HW2-Vangala/)
 - Reading Books
 - Coding
 - Watching Movies
