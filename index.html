@@ -1,193 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Tharun Vangala - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun Kumar Reddy Vangala</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        li:hover{
+            background-color: burlywood;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#achievements">Achievements</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#term-project">Term-Project</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Tharun Vangala</h1>
-        <p>Email: vangalat@mail.gvsu.edu | LinkedIn: <a
-            href="https://www.linkedin.com/in/tharunvangala/" class="text-white">https://www.linkedin.com/in/tharunvangala/</a></p>
+    <!-- Top Bar -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Tharun Kumar Reddy Vangala</h1>
     </header>
 
-    <div class="container my-5">
-        <section id="experience" class="mb-5">
-            <h2>Experience</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Uptime AI - Full Time</h3>
-                    <p>Feb 2021 - August 2022 | Bangalore, India</p>
-                    <p>Backend Python | Flask</p>
-                    <ul>
-                        <li>Avoided the server shutdowns by fixing the memory leaks, data leaks, pickles</li>
-                        <li>Stabilized the code base by fixing the bugs.</li>
-                        <li>Implemented important features like alerts creation which enhanced the product.</li>
-                        <li>Redesigned the system into multiprocessing.</li>
-                        <li>Started using kafka.</li>
+    <div class="container mt-4">
+
+        <!-- Big Card -->
+        <div class="card">
+
+            <!-- Card Body -->
+            <div class="card-body row">
+
+                <!-- Navigation Buttons (2/5th of the card) -->
+                <div class="col-md-2">
+                    <ul class="list-group">
+                        <li class="list-group-item" onclick="loadContent('experience')"><a href="#" class="text-dark">Experience</a></li>
+                        <li class="list-group-item" onclick="loadContent('projects')"><a href="#" class="text-dark">Projects</a></li>
+                        <li class="list-group-item" onclick="loadContent('education')"><a href="#" class="text-dark">Education</a></li>
+                        <li class="list-group-item" onclick="loadContent('skills')"><a href="#" class="text-dark">Skills</a></li>
+                        <li class="list-group-item" onclick="loadContent('achievements')"><a href="#" class="text-dark">Achievements</a></li>
+                        <li class="list-group-item" onclick="loadContent('term-project')"><a href="#" class="text-dark">Term Project</a></li>
                     </ul>
                 </div>
+
+                <!-- Right Side Content (3/5th of the card) -->
+                <div class="col-md-10" id="content">
+                    <!-- Initial message -->
+                    <h2>Experience</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Uptime AI - Full Time</h3>
+                                <p>February 2021 - July 2022 | Bangalore, India</p>
+                                <p>Software Developer</p>
+                                <ul>
+                                    <li>Improved the data preprocessing pipeline through in-depth analysis.</li>
+                                    <li>Mitigated server shutdowns by identifying and rectifying memory leaks, data leaks, and pickle-related issues.</li>
+                                    <li>Transformed system architecture from single processing to a multiprocessing model.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>MAQ Software - Intern</h3>
+                                <p>September 2019 - January 2020 | Mumbai, India</p>
+                                <p>Data Analyst</p>
+                                <ul>
+                                    <li>Transformed raw data into actionable insights by creating engaging and interactive Power-BI reports.</li>
+                                    <li>Proficiently orchestrated the consolidation of data from diverse databases by crafting intricate SQL queries.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </div>
+
             </div>
 
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>MAQ Software - Intern</h3>
-                    <p>Aug 2020 - Jan 2021 | Mumbai, India</p>
-                    <p>Backend SQL | PowerBI</p>
-                    <ul>
-                        <li>Used azure data workflow, pulled data from various data sources.</li>
-                        <li>Performed SQL queries.</li>
-                        <li>Created PowerBI reports that are interactive and effective.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <section id="projects" class="mb-5">
-            <h2>Projects</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Geekstagram</h3>
-                    <p>Created a local website using PHP. In this, users can write, compile code, and save it with comments like questions and approaches to solve problems. This helps with easier access and provides a good interface for revision purposes. Used HTML, CSS, PHP, and SQL.</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>Task Scheduler</h3>
-                    <p>Developed a website using HTML, CSS, JS, Python, and MongoDB. Users can create tasks and schedule them. The website helps organize tasks and notifies users, improving overall productivity.</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>Trading Bot</h3>
-                    <p>Created a Python program that fetches data using APIs and Selenium. Based on technical analysis, it decides whether to buy or sell shares. Used Python, APIs, Selenium, MongoDB, and PostgreSQL.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="mb-5">
-            <h2>Education</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Lovely Professional University, Punjab</h3>
-                    <p>B.Tech(CSE) - 8.14/10</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class card-body="">
-                    <h3>Grand Valley State University, Michigan</h3>
-                    <p>Masters(CS) - 3.7/4</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="mb-5">
-            <h2>Skills</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Programming Languages</h3>
-                    <p>C++, Python, C, JavaScript</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>Tools</h3>
-                    <p>Git</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>Frameworks</h3>
-                    <p>Flask, React Native</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>Technologies</h3>
-                    <p>CSS, HTML, SQL, MongoDB, PostgreSQL, Kafka</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3>HackerRank</h3>
-                    <p>Successfully cleared the Basic and Medium level of Problem-solving exams.</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>Microsoft</h3>
-                    <p>Successfully passed the SQL exam, testing Transact Query skills.</p>
-                </div>
-            </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3>LinkedIn</h3>
-                    <p>Cleared a C++ skill assessment test and attained a badge in C++.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="term-project">
-            <h2><a href="https://tzzzzn.github.io/GVSU-CIS641-BTS/">Term Project</a></h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3><a href="https://github.com/tzzzzn/GVSU-CIS641-BTS">Overview</a></h3>
-                    <p>The project is a task scheduler application that offers task creation, management, 
-                        notifications, user authentication, repetition options, and task categorization 
-                        features. It aims to provide several key business values, including improved task 
-                        organization and productivity, effective time management, reduced missed deadlines, 
-                        enhanced user engagement, and potential revenue generation through advertising. However, 
-                        the project faces challenges and constraints related to notification delivery, 
-                        synchronization, and competition in the market.</p>
-                </div>
-            </div>
-        </section>
     </div>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function loadContent(category) {
+            var contentDiv = document.getElementById('content');
+            var content = '';
+
+            // Switch content based on the selected category
+            switch (category) {
+                case 'experience':
+                    content = `
+                        <h2>Experience</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Uptime AI - Full Time</h3>
+                                <p>February 2021 - July 2022 | Bangalore, India</p>
+                                <p>Software Developer</p>
+                                <ul>
+                                    <li>Improved the data preprocessing pipeline through in-depth analysis.</li>
+                                    <li>Mitigated server shutdowns by identifying and rectifying memory leaks, data leaks, and pickle-related issues.</li>
+                                    <li>Transformed system architecture from single processing to a multiprocessing model.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>MAQ Software - Intern</h3>
+                                <p>September 2019 - January 2020 | Mumbai, India</p>
+                                <p>Data Analyst</p>
+                                <ul>
+                                    <li>Transformed raw data into actionable insights by creating engaging and interactive Power-BI reports.</li>
+                                    <li>Proficiently orchestrated the consolidation of data from diverse databases by crafting intricate SQL queries.</li>
+                                </ul>
+                            </div>
+                        </div>`;
+                    break;
+
+                case 'projects':
+                    content = `
+                        <h2>Projects</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Task Scheduler</h3>
+                                <p>HTML | CSS | JS | MongoDB | Python</p>
+                                <ul>
+                                    <li>Implemented a versatile task categorization system.</li>
+                                    <li>Integrated automated email notifications.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>Geekstagram</h3>
+                                <p>HTML | CSS | PHP | SQL</p>
+                                <ul>
+                                    <li>Implemented a user-friendly code editor.</li>
+                                    <li>Enhanced the system by enabling users to add comments, questions, and problem-solving approaches.</li>
+                                    <li>Designed the platform with revision in mind.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>Trading Bot</h3>
+                                <p>Python | API | Selenium | MongoDB | PostgreSQL</p>
+                                <ul>
+                                    <li>Fetched real-time data using APIs.</li>
+                                    <li>Created an automated trading system based on past data and technical analysis.</li>
+                                </ul>
+                            </div>
+                        </div>`;
+                    break;
+
+                case 'education':
+                    content = `
+                        <h2>Education</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Grand Valley State University</h3>
+                                <p>Master’s in Computer Science</p>
+                                <p>Grad May 2024 | CGPA: 3.78</p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>Lovely Professional University</h3>
+                                <p>Bachelor’s in Computer Science</p>
+                                <p>Grad April 2020 | CGPA: 3.70</p>
+                            </div>
+                        </div>`;
+                    break;
+
+                case 'skills':
+                    content = `
+                        <h2>Skills</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Languages</h3>
+                                <p>Advance: C++, Python<br> Intermediate: JavaScript</p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>Tools</h3>
+                                <p>GitHub, Visual Studio Code</p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>Frameworks and Libraries</h3>
+                                <p>ReactJS, Flask</p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>Technologies</h3>
+                                <p>HTML, CSS, SQL, NoSQL, Kafka, MongoDB</p>
+                            </div>
+                        </div>`;
+                    break;
+
+                case 'achievements':
+                    content = `
+                        <h2>Achievements</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>HackerRank</h3>
+                                <p>Successfully cleared the Basic and Medium level of Problem-solving exams.</p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>Microsoft</h3>
+                                <p>Successfully passed the SQL exam, testing Transact Query skills.</p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h3>LinkedIn</h3>
+                                <p>Cleared a C++ skill assessment test and attained a badge in C++.</p>
+                            </div>
+                        </div>`;
+                    break;
+
+                case 'term-project':
+                    content = `
+                        <h2>Term Project</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Overview</h3>
+                                <p>The project is a task scheduler application that offers task creation, management, 
+                                    notifications, user authentication, repetition options, and task categorization 
+                                    features. It aims to provide several key business values, including improved task 
+                                    organization and productivity, effective time management, reduced missed deadlines, 
+                                    enhanced user engagement, and potential revenue generation through advertising. However, 
+                                    the project faces challenges and constraints related to notification delivery, 
+                                    synchronization, and competition in the market.</p>
+                                    <p>GitHub Repository: <a href="https://github.com/tzzzzn/GVSU-CIS641-BTS">https://github.com/tzzzzn/GVSU-CIS641-BTS</a></p>
+                                    <p>Website: <a href="https://tzzzzn.github.io/GVSU-CIS641-BTS/">https://tzzzzn.github.io/GVSU-CIS641-BTS/</a></p>
+                            </div>
+                        </div>`;
+                    break;
+
+                default:
+                    break;
+            }
+
+            // Update the content
+            contentDiv.innerHTML = content;
+        }
+    </script>
+
 </body>
 
 </html>
